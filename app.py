@@ -33,6 +33,7 @@ data = load_data()
 
 # Graficar serie
 def plot_series(data, initial_date, proy):
+    # Visualiza la demanda historica, su proyeccion y los limites de incertidumbre.
     data_plot = data.loc[initial_date:]
     data_plot = data_plot[:-(120-proy)]
     fig = go.Figure([
